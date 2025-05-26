@@ -2,6 +2,7 @@ import type { Element } from 'hast'
 import mdx from '@astrojs/mdx'
 import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
+import Compress from 'astro-compress'
 import robotsTxt from 'astro-robots-txt'
 import { defineConfig } from 'astro/config'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -58,6 +59,13 @@ export default defineConfig({
     }),
     sitemap(),
     robotsTxt(),
+    Compress({
+      CSS: true,
+      HTML: true,
+      Image: false,
+      JavaScript: false,
+      SVG: false,
+    }),
   ],
   markdown: {
     remarkPlugins: [
