@@ -18,7 +18,6 @@
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.0",
     "astro": "^5.8.0",
-    "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "astro-robots-txt": "^1.0.0",
     "canvaskit-wasm": "^0.40.0",
