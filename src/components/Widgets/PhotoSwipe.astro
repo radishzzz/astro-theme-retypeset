@@ -1,6 +1,5 @@
 <script>
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
-import 'photoswipe/style.css'
 
 let lightbox: PhotoSwipeLightbox
 const pswp = import('photoswipe')
@@ -49,7 +48,6 @@ function setupPhotoSwipe() {
   })
 
   lightbox.init()
-
   bodyElement.setAttribute('data-photoswipe-initialized', 'true')
 }
 

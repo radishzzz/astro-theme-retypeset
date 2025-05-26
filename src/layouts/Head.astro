@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions'
 import katexCSS from 'katex/dist/katex.min.css?url'
+import photoSwipeCSS from 'photoswipe/style.css?url'
 import { allLocales, defaultLocale, themeConfig } from '@/config'
 import { ui } from '@/i18n/ui'
 import { getPageInfo } from '@/utils/page'
@@ -57,10 +58,12 @@ const pageImage = postSlug
 <link rel="preload" href="/fonts/Snell-Bold-SF.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/STIX-VF.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/STIX-Italic-VF.woff2" as="font" type="font/woff2" crossorigin />
-{commentEnabled && walineServerURL && <link rel="preload" href="/assets/waline/waline.css" as="style" />}
+<link rel="preload" href={photoSwipeCSS} as="style" />
 {katexEnabled && <link rel="preload" href={katexCSS} as="style" />}
-{commentEnabled && walineServerURL && <link rel="stylesheet" href="/assets/waline/waline.css" media="print" onload="this.media='all'" />}
+{commentEnabled && walineServerURL && <link rel="preload" href="/assets/waline/waline.css" as="style" />}
+<link rel="stylesheet" href={photoSwipeCSS} media="print" onload="this.media='all'" />
 {katexEnabled && <link rel="stylesheet" href={katexCSS} media="print" onload="this.media='all'" />}
+{commentEnabled && walineServerURL && <link rel="stylesheet" href="/assets/waline/waline.css" media="print" onload="this.media='all'" />}
 <link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS Feed" />
 <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Atom Feed" />
 <link rel="sitemap" href="/sitemap-index.xml" />
