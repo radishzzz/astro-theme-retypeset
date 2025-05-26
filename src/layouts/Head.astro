@@ -61,9 +61,9 @@ const pageImage = postSlug
 <link rel="preload" href={photoSwipeCSS} as="style" />
 {katexEnabled && <link rel="preload" href={katexCSS} as="style" />}
 {commentEnabled && walineServerURL && <link rel="preload" href="/assets/waline/waline.css" as="style" />}
-<link rel="stylesheet" href={photoSwipeCSS} media="print" onload="this.media='all'" />
-{katexEnabled && <link rel="stylesheet" href={katexCSS} media="print" onload="this.media='all'" />}
-{commentEnabled && walineServerURL && <link rel="stylesheet" href="/assets/waline/waline.css" media="print" onload="this.media='all'" />}
+<link rel="stylesheet" href={photoSwipeCSS} media="print" onload={`this.media='all'`} />
+{katexEnabled && <link rel="stylesheet" href={katexCSS} media="print" onload={`this.media='all'`} />}
+{commentEnabled && walineServerURL && <link rel="stylesheet" href="/assets/waline/waline.css" media="print" onload={`this.media='all'`} />}
 <link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS Feed" />
 <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Atom Feed" />
 <link rel="sitemap" href="/sitemap-index.xml" />
