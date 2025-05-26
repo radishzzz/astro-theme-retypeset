@@ -46,7 +46,7 @@ const filteredHeadings = headings.filter(heading =>
         <TocIcon
           id="toc-icon"
           aria-hidden="true"
-          class="ml-1 hidden aspect-square w-4.2 2xl:(mt-4 block origin-center active:scale-90!)"
+          class="ml-4 hidden aspect-square w-4.2 2xl:(mt-4 block origin-center active:scale-90!)"
           fill="currentColor"
         />
       </label>
@@ -109,7 +109,7 @@ const filteredHeadings = headings.filter(heading =>
   --at-apply: 'grid rows-[0fr] transition-all duration-350 ease-in-out';
 }
 .accordion-content {
-  --at-apply: 'max-h-58 overflow-hidden pl-4 pr-6 2xl:(max-h-[calc(100vh-26.5rem)] pl-1)';
+  --at-apply: 'max-h-58 overflow-hidden pl-4 pr-6 2xl:max-h-[calc(100vh-26.5rem)]';
 }
 
 /* When toggle is checked, expand the wrapper to show content */

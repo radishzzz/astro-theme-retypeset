@@ -60,7 +60,7 @@ html.reduce-motion {
   }
 }
 @media (max-width: 1023px) {
-  html:not(.reduce-motion) #gsap-post-page-content > :nth-child(-n+8) {
+  html:not(.reduce-motion) #gsap-post-page-content > :nth-child(-n+7) {
     opacity: 0;
     transform: translateY(3rem);
   }

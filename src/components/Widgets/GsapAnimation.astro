@@ -17,8 +17,8 @@ function setupPostPageAnimation() {
   const isSmallScreen = window.matchMedia('(max-width: 1535px)').matches
 
   if (isLargeScreen) {
-    // First 16 elements of post content
-    gsap.to(postContentChildren.slice(0, 16), {
+    // First 14 elements of post content
+    gsap.to(postContentChildren.slice(0, 14), {
       opacity: 1,
       y: 0,
       duration: 0.5,
@@ -26,13 +26,13 @@ function setupPostPageAnimation() {
       ease: 'power2.out',
       stagger: 0.05,
     })
-    // Rest elements of post content as the 17th element
-    if (postContentChildren.length > 16) {
-      gsap.to(postContentChildren.slice(16), {
+    // Rest elements of post content as the 15th element
+    if (postContentChildren.length > 14) {
+      gsap.to(postContentChildren.slice(14), {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        delay: 0.2 + 0.05 * 16,
+        delay: 0.2 + 0.05 * 14,
         ease: 'power2.out',
       })
     }
@@ -83,8 +83,8 @@ function setupPostPageAnimation() {
     }
   }
   else {
-    // First 8 elements of post content
-    gsap.to(postContentChildren.slice(0, 8), {
+    // First 7 elements of post content
+    gsap.to(postContentChildren.slice(0, 7), {
       opacity: 1,
       y: 0,
       duration: 0.5,
