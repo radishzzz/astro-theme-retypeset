@@ -23,8 +23,8 @@ function setupPostPageAnimation() {
 
   if (isLargeScreen) {
     // Post Content + Tags + Comments
-    // First 15 elements
-    gsap.to(allElements.slice(0, 15), {
+    // First 16 elements
+    gsap.to(allElements.slice(0, 16), {
       opacity: 1,
       y: 0,
       duration: 0.5,
@@ -32,13 +32,13 @@ function setupPostPageAnimation() {
       ease: 'power2.out',
       stagger: 0.05,
     })
-    // Rest elements as the 16th element
-    if (allElements.length > 15) {
-      gsap.to(allElements.slice(15), {
+    // Rest elements as the 17th element
+    if (allElements.length > 16) {
+      gsap.to(allElements.slice(16), {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        delay: 0.2 + 0.05 * 15,
+        delay: 0.2 + 0.05 * 16,
         ease: 'power2.out',
       })
     }
@@ -60,7 +60,7 @@ function setupPostPageAnimation() {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.25,
         ease: 'power2.out',
       })
     }
@@ -71,7 +71,7 @@ function setupPostPageAnimation() {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.25,
         ease: 'power2.out',
         stagger: 0.025,
       })
