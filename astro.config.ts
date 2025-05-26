@@ -60,8 +60,8 @@ export default defineConfig({
     sitemap(),
     robotsTxt(),
     Compress({
-      CSS: true,
-      HTML: true,
+      CSS: false,
+      HTML: false,
       Image: false,
       JavaScript: false,
       SVG: false,
