@@ -144,18 +144,16 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
 
   <!-- Tags -->
   {post.data.tags && post.data.tags.length > 0 && (
-    <div id="gsap-post-page-tags">
-      <div class="uno-decorative-line"></div>
-      <div class="uno-tags-wrapper">
-        {post.data.tags.map((tag: string) => (
-          <a
-            href={getTagPath(tag, lang)}
-            class="uno-tags-style"
-          >
-            {tag}
-          </a>
-        ))}
-      </div>
+    <div class="uno-decorative-line"></div>
+    <div class="uno-tags-wrapper">
+      {post.data.tags.map((tag: string) => (
+        <a
+          href={getTagPath(tag, lang)}
+          class="uno-tags-style"
+        >
+          {tag}
+        </a>
+      ))}
     </div>
   )}
   <!-- Comments -->

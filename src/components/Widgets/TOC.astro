@@ -22,7 +22,7 @@ const filteredHeadings = headings.filter(heading =>
   // TOC Container
   <div
     id="toc-container"
-    class="mb-6 uno-round-border bg-secondary/5 2xl:(fixed left-0 top-44.5 max-w-[min(calc(50vw-38rem),13rem)] border-none bg-secondary/0)"
+    class="mb-6 uno-round-border bg-secondary/5 2xl:(fixed left-0 top-45 max-w-[min(calc(50vw-38rem),13rem)] border-none bg-secondary/0)"
   >
     {/* Hidden Checkbox */}
     <input
@@ -96,18 +96,20 @@ const filteredHeadings = headings.filter(heading =>
   --at-apply: 'ml-4 font-semibold 2xl:hidden';
 }
 .toc-list {
-  --at-apply: 'mb-4 mt-1 list-none pl-0 space-y-2 2xl:space-y-1.2';
+  --at-apply: 'mb-2.2 mt-0 list-none pl-0 space-y-1.1 2xl:(mb-2 space-y-1)';
 }
 .toc-link-h2, .toc-link-h3, .toc-link-h4 {
   --at-apply: 'text-balance text-sm font-normal no-underline 2xl:(text-3.2 c-secondary/60 transition-colors transition-font-weight duration-300 ease-out hover:c-secondary hover:font-medium)';
 }
-
+.toc-list > :first-child {
+  --at-apply: 'mt-0';
+}
 /* Initial collapsed state with zero height grid row */
 .accordion-wrapper {
   --at-apply: 'grid rows-[0fr] transition-all duration-350 ease-in-out';
 }
 .accordion-content {
-  --at-apply: 'max-h-66 overflow-hidden pl-4 pr-6 2xl:(max-h-[calc(100vh-26rem)] pl-1)';
+  --at-apply: 'max-h-58 overflow-hidden pl-4 pr-6 2xl:(max-h-[calc(100vh-26.5rem)] pl-1)';
 }
 
 /* When toggle is checked, expand the wrapper to show content */

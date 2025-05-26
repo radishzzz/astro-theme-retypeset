@@ -37,13 +37,11 @@ html.reduce-motion {
 }
 
 /* GSAP Animation Elements Initial States */
-html:not(.reduce-motion) #gsap-post-page-content > *,
-html:not(.reduce-motion) #gsap-post-page-tags,
-html:not(.reduce-motion) #waline {
-  opacity: 0;
-  transform: translateY(3rem);
-}
 @media (min-width: 1024px) {
+  html:not(.reduce-motion) #gsap-post-page-content > * {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
   html:not(.reduce-motion) #gsap-post-page-date {
     opacity: 0;
     transform: translateY(1.5rem);
@@ -59,6 +57,12 @@ html:not(.reduce-motion) #waline {
   html:not(.reduce-motion) #toc-list > * {
     opacity: 0;
     transform: translateY(1.5rem);
+  }
+}
+@media (max-width: 1023px) {
+  html:not(.reduce-motion) #gsap-post-page-content > :nth-child(-n+8) {
+    opacity: 0;
+    transform: translateY(3rem);
   }
 }
 @media (max-width: 1535px) {

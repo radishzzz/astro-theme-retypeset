@@ -2,29 +2,23 @@
 import { gsap } from 'gsap'
 
 function setupPostPageAnimation() {
-  // Post Content + Tags + Comments
+  // Elements
   const postContent = document.getElementById('gsap-post-page-content')
   const postContentChildren = postContent ? Array.from(postContent.children) : []
-  const tagsElement = document.getElementById('gsap-post-page-tags')
-  const walineElement = document.getElementById('waline')
-  const allElements = [...postContentChildren, tagsElement, walineElement].filter(Boolean)
-
-  // TOC + Date + Back Button + TOC Icon
+  const tocContainer = document.getElementById('toc-container')
+  const tocIcon = document.getElementById('toc-icon')
   const tocList = document.getElementById('toc-list')
   const tocListChildren = tocList ? Array.from(tocList.children) : []
-  const dateElement = document.getElementById('gsap-post-page-date')
   const backButton = document.getElementById('back-button')
-  const tocIcon = document.getElementById('toc-icon')
-  const tocContainer = document.getElementById('toc-container')
+  const dateElement = document.getElementById('gsap-post-page-date')
 
   // Screen Size Check
   const isLargeScreen = window.matchMedia('(min-width: 1024px)').matches
   const isSmallScreen = window.matchMedia('(max-width: 1535px)').matches
 
   if (isLargeScreen) {
-    // Post Content + Tags + Comments
-    // First 16 elements
-    gsap.to(allElements.slice(0, 16), {
+    // First 16 elements of post content
+    gsap.to(postContentChildren.slice(0, 16), {
       opacity: 1,
       y: 0,
       duration: 0.5,
@@ -32,9 +26,9 @@ function setupPostPageAnimation() {
       ease: 'power2.out',
       stagger: 0.05,
     })
-    // Rest elements as the 17th element
-    if (allElements.length > 16) {
-      gsap.to(allElements.slice(16), {
+    // Rest elements of post content as the 17th element
+    if (postContentChildren.length > 16) {
+      gsap.to(postContentChildren.slice(16), {
         opacity: 1,
         y: 0,
         duration: 0.5,
@@ -49,7 +43,7 @@ function setupPostPageAnimation() {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.15,
         ease: 'power2.out',
       })
     }
@@ -89,9 +83,8 @@ function setupPostPageAnimation() {
     }
   }
   else {
-    // Post Content + Tags + Comments
-    // First 6 elements
-    gsap.to(allElements.slice(0, 6), {
+    // First 8 elements of post content
+    gsap.to(postContentChildren.slice(0, 8), {
       opacity: 1,
       y: 0,
       duration: 0.5,
@@ -99,19 +92,9 @@ function setupPostPageAnimation() {
       ease: 'power2.out',
       stagger: 0.05,
     })
-    // Rest elements as the 7th element
-    if (allElements.length > 6) {
-      gsap.to(allElements.slice(6), {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        delay: 0.2 + 0.05 * 6,
-        ease: 'power2.out',
-      })
-    }
   }
 
-  // Mobile Animation (for screens smaller than 1536px)
+  // TOC Container
   if (isSmallScreen && tocContainer) {
     gsap.to(tocContainer, {
       opacity: 1,
