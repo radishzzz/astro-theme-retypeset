@@ -4,9 +4,9 @@ description: "欢迎来到我的博客！这是使用 Astro Theme Retypeset 创�
 published: "2024-01-20"
 updated: "2024-01-20"
 tags: 
-	- 博客
-	- Astro
-	- 入门
+- 博客
+- Astro
+- 入门
 draft: false
 lang: zh
 abbrlink: Hello-Blog
