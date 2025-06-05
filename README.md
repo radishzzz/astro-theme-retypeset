@@ -1,7 +1,7 @@
 # Retypeset
 
-<img alt="Cover Image" src="images/retypeset-en-desktop.webp"/>
-<img alt="Cover Image" src="images/retypeset-en-mobile.webp"/>
+<img alt="Cover Image" src="assets/images/retypeset-en-desktop.webp"/>
+<img alt="Cover Image" src="assets/images/retypeset-en-mobile.webp"/>
 
 [简体中文](README.zh.md)｜繁体中文｜日本語｜Español｜Français｜Русский
 
@@ -33,7 +33,7 @@ Retypeset is a static blog theme based on the [Astro](https://astro.build/) fram
 <br>
 <p align="center">
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fen%2F&form_factor=desktop">
-    <img width="710" alt="Retypeset Lighthouse Score" src="images/retypeset-lighthouse-score.svg">
+    <img width="710" alt="Retypeset Lighthouse Score" src="assets/images/retypeset-lighthouse-score.svg">
   <a>
 </p>
 
@@ -62,7 +62,7 @@ Retypeset is a static blog theme based on the [Astro](https://astro.build/) fram
 3. Refer to the [Theme Guide](https://retypeset.radishzz.cc/en/posts/theme-guide/) to customize your blog and create new articles.
 4. Refer to the [Astro Deployment Guides](https://docs.astro.build/en/guides/deploy/) to deploy your blog to Netlify, Vercel, or other platforms.
 
-&emsp;[![Deploy to Netlify](images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](images/deploy-vercel.svg)](https://vercel.com/new)
+&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new)
 
 ## Updates
 
