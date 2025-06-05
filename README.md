@@ -1,22 +1,11 @@
-<img alt="Cover Image" src="images/retypeset-en-desktop.webp"/>
-<img alt="Cover Image" src="images/retypeset-en-mobile.webp"/>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"
-            srcset="https://img.shields.io/badge/-English-4593F8?style=for-the-badge" />
-    <source media="(prefers-color-scheme: light)"
-            srcset="https://img.shields.io/badge/-English-0A69DA?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/-English-0A69DA?style=for-the-badge" alt="English">
-  </picture>
-  <a title="zh" href="README.zh.md">
-    <img src="https://img.shields.io/badge/-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-545759?style=for-the-badge" alt="简体中文">
-  </a>
-</div>
-
 # Retypeset
 
+[简体中文](README.zh.md)｜繁体中文｜日本語｜Español｜Français｜Русский
+
 Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. Inspired by [Typography](https://astro-theme-typography.vercel.app/), Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.
+
+<img alt="Cover Image" src="images/retypeset-en-desktop.webp"/>
+<img alt="Cover Image" src="images/retypeset-en-mobile.webp"/>
 
 ## Demo
 
