@@ -57,7 +57,7 @@ Retypeset est un thème de blog statique basé sur le framework [Astro](https://
    pnpm dev
    ```
 
-3. Référez-vous au [Guide du thème](https://retypeset.radishzz.cc/en/posts/theme-guide/) pour personnaliser votre blog et créer de nouveaux articles.
+3. Référez-vous au [Theme Guide](https://retypeset.radishzz.cc/en/posts/theme-guide/) pour personnaliser votre blog et créer de nouveaux articles.
 4. Référez-vous aux [Guides de déploiement Astro](https://docs.astro.build/fr/guides/deploy/) pour déployer votre blog sur Netlify, Vercel ou d'autres plateformes.
 
 &emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
