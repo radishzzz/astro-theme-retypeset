@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/mdx':
         specifier: ^4.3.0
-        version: 4.3.0(astro@5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))
+        version: 4.3.0(astro@5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))
       '@astrojs/partytown':
         specifier: ^2.1.4
         version: 2.1.4
@@ -18,14 +18,14 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1
       astro:
-        specifier: ^5.8.2
-        version: 5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: ^5.9.0
+        version: 5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
       astro-compress:
         specifier: ^2.3.8
         version: 2.3.8(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
       astro-og-canvas:
         specifier: ^0.7.0
-        version: 0.7.0(astro@5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))
+        version: 0.7.0(astro@5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))
       astro-robots-txt:
         specifier: ^1.0.0
         version: 1.0.0
@@ -1347,8 +1347,8 @@ packages:
   '@vitest/pretty-format@3.1.1':
     resolution: {integrity: sha512-dg0CIzNx+hMMYfNmSqJlLSXEmnNhMswcn3sXO7Tpldr0LiGmg3eXdLLhwkv2ZqgHb/d5xg5F7ezNFRA1fA13yA==}
 
-  '@vitest/pretty-format@3.2.1':
-    resolution: {integrity: sha512-xBh1X2GPlOGBupp6E1RcUQWIxw0w/hRLd3XyBS6H+dMdKTAqHDNsIR2AnJwPA3yYe9DFy3VUKTe3VRTrAiQ01g==}
+  '@vitest/pretty-format@3.2.2':
+    resolution: {integrity: sha512-FY4o4U1UDhO9KMd2Wee5vumwcaHw7Vg4V7yR4Oq6uK34nhEJOmdRYrk3ClburPRUA09lXD/oXWZ8y/Sdma0aUQ==}
 
   '@vitest/runner@3.1.1':
     resolution: {integrity: sha512-X/d46qzJuEDO8ueyjtKfxffiXraPRfmYasoC4i5+mlLEJ10UvPb0XH5M9C3gWuxd7BAQhpK42cJgJtq53YnWVA==}
@@ -1508,8 +1508,8 @@ packages:
   astro-robots-txt@1.0.0:
     resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
 
-  astro@5.8.2:
-    resolution: {integrity: sha512-t0TBpBdVluA2QVmbFBwpIqmTvBwNhIz1XTIT1BWPkDkoIgsiEMf6BOZqcoGG7f4GVKkUB9bTgMOhPgU3tbJ6vQ==}
+  astro@5.9.0:
+    resolution: {integrity: sha512-AHF7oZDBQRwggHUG0bwBhRQjrDD+vJpCtPd0/GVxDB1hGRV0SQuFWS0UHX5bYczIqFcao1z9o9o0r2rQtHrTMg==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4291,12 +4291,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.0(astro@5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))':
+  '@astrojs/mdx@4.3.0(astro@5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.2
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       acorn: 8.14.1
-      astro: 5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5403,7 +5403,7 @@ snapshots:
       tinyrainbow: 2.0.0
     optional: true
 
-  '@vitest/pretty-format@3.2.1':
+  '@vitest/pretty-format@3.2.2':
     dependencies:
       tinyrainbow: 2.0.0
     optional: true
@@ -5604,7 +5604,7 @@ snapshots:
       '@playform/pipe': 0.1.3
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
       commander: 13.1.0
       csso: 5.0.5
       deepmerge-ts: 7.1.5
@@ -5665,9 +5665,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-og-canvas@0.7.0(astro@5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)):
+  astro-og-canvas@0.7.0(astro@5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
-      astro: 5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0)
       canvaskit-wasm: 0.39.1
       deterministic-object-hash: 2.0.2
       entities: 4.5.0
@@ -5677,7 +5677,7 @@ snapshots:
       valid-filename: 4.0.0
       zod: 3.25.51
 
-  astro@5.8.2(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.9.0(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.41.1)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
@@ -8768,7 +8768,7 @@ snapshots:
     dependencies:
       '@vitest/expect': 3.1.1
       '@vitest/mocker': 3.1.1(vite@6.3.5(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.4)(yaml@2.8.0))
-      '@vitest/pretty-format': 3.2.1
+      '@vitest/pretty-format': 3.2.2
       '@vitest/runner': 3.1.1
       '@vitest/snapshot': 3.1.1
       '@vitest/spy': 3.1.1
