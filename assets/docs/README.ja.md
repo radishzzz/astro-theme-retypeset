@@ -1,7 +1,7 @@
 # 再組版
 
-<img alt="Cover Image" src="assets/images/retypeset-zh-desktop.webp"/>
-<img alt="Cover Image" src="assets/images/retypeset-zh-mobile.webp"/>
+<img alt="Cover Image" src="../images/retypeset-ja-desktop.webp"/>
+<img alt="Cover Image" src="../images/retypeset-ja-mobile.webp"/>
 
 Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。[活版印字](https://astro-theme-typography.vercel.app/) からデザインのインスピレーションを得て、新しい視覚的な規範を確立し、すべてのページのレイアウトを再構成することで、紙の書籍のような読書体験を提供し、版面の美しさを蘇らせます。見るものすべてが細部にこだわり、限られたスペースの中に優雅さを表現しています。
 
@@ -31,7 +31,7 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
 <br>
 <p align="center">
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fja%2F&form_factor=desktop">
-    <img width="710" alt="Retypeset Lighthouse Score" src="assets/images/retypeset-lighthouse-score.svg">
+    <img width="710" alt="Retypeset Lighthouse Score" src="../images/retypeset-lighthouse-score.svg">
   <a>
 </p>
 
@@ -60,7 +60,7 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
 3. [テーマガイド](https://retypeset.radishzz.cc/ja/posts/theme-guide/) を参照して、ブログをカスタマイズし、新しい記事を作成します。
 4. [Astroデプロイガイド](https://docs.astro.build/ja/guides/deploy/) を参照して、ブログをNetlify、Vercelなどのプラットフォームにデプロイします。
 
-&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new)
+&emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
 
 ## アップデート
 

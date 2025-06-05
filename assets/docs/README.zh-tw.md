@@ -1,7 +1,7 @@
 # 重新編排
 
-<img alt="Cover Image" src="assets/images/retypeset-zh-desktop.webp"/>
-<img alt="Cover Image" src="assets/images/retypeset-zh-mobile.webp"/>
+<img alt="Cover Image" src="../images/retypeset-zh-desktop.webp"/>
+<img alt="Cover Image" src="../images/retypeset-zh-mobile.webp"/>
 
 Retypeset 是一款基於 [Astro](https://astro.build/) 框架的靜態部落格主題，中文名為重新編排。本主題以 [活版印字](https://astro-theme-typography.vercel.app/) 為設計靈感，通過建立全新的視覺規範，對所有頁面進行重新編排，打造紙質書頁般的閱讀體驗，再現版式之美。所見皆為細節，方寸盡顯優雅。
 
@@ -31,7 +31,7 @@ Retypeset 是一款基於 [Astro](https://astro.build/) 框架的靜態部落格
 <br>
 <p align="center">
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fzh-tw%2F&form_factor=desktop">
-    <img width="710" alt="Retypeset Lighthouse Score" src="assets/images/retypeset-lighthouse-score.svg">
+    <img width="710" alt="Retypeset Lighthouse Score" src="../images/retypeset-lighthouse-score.svg">
   <a>
 </p>
 
@@ -60,7 +60,7 @@ Retypeset 是一款基於 [Astro](https://astro.build/) 框架的靜態部落格
 3. 參考 [主題上手指南](https://retypeset.radishzz.cc/zh-tw/posts/theme-guide/)，自定義你的部落格並創建新文章。
 4. 參考 [Astro 部署指南](https://docs.astro.build/zh-tw/guides/deploy/)，將部落格部署至 Netlify、Vercel 等平台。
 
-&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new)
+&emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
 
 ## 更新
 
