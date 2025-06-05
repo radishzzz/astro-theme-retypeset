@@ -1,15 +1,15 @@
 # 再組版
 
-<img alt="Cover Image" src="../images/retypeset-ja-desktop.webp"/>
-<img alt="Cover Image" src="../images/retypeset-ja-mobile.webp"/>
+<img alt="Cover Image" src="../images/retypeset-zh-desktop.webp"/>
+<img alt="Cover Image" src="../images/retypeset-zh-mobile.webp"/>
 
 Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。[活版印字](https://astro-theme-typography.vercel.app/) からデザインのインスピレーションを得て、新しい視覚的な規範を確立し、すべてのページのレイアウトを再構成することで、紙の書籍のような読書体験を提供し、版面の美しさを蘇らせます。見るものすべてが細部にこだわり、限られたスペースの中に優雅さを表現しています。
 
 ## デモ
 
-- [再組版](https://retypeset.radishzz.cc/ja/)
 - [重新编排](https://retypeset.radishzz.cc/)
 - [重新編排](https://retypeset.radishzz.cc/zh-tw/)
+- [再組版](https://retypeset.radishzz.cc/ja/)
 - [Retypeset](https://retypeset.radishzz.cc/en/)
 - [Retipografía](https://retypeset.radishzz.cc/es/)
 - [Переверстка](https://retypeset.radishzz.cc/ru/)
@@ -17,7 +17,7 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
 ## 特徴
 
 - AstroとUnoCSSで構築
-- SEO、サイトマップ、OpenGraph、TOC、RSS、MDXとLaTeXのサポート
+- SEO、サイトマップ、OpenGraph、TOC、RSS、MDX と LaTeX のサポート
 - 多言語対応（i18n）
 - ライト/ダークモード
 - エレガントな遷移アニメーション

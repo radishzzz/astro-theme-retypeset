@@ -58,7 +58,7 @@ Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主
    ```
 
 3. 参考 [主题上手指南](https://retypeset.radishzz.cc/posts/theme-guide/)，自定义你的博客并创建新文章。
-4. 参考 [Astro 部署指南](https://docs.astro.build/guides/deploy/)，将博客部署至 Netlify、Vercel 等平台。
+4. 参考 [Astro 部署指南](https://docs.astro.build/zh-cn/guides/deploy/)，将博客部署至 Netlify、Vercel 等平台。
 
 &emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
 
