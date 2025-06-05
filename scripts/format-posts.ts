@@ -12,18 +12,24 @@ import fg from 'fast-glob'
 interface MarkdownContent {
   frontmatter: string
   body: string
+  hasFrontmatter: boolean
 }
 
 // Split Markdown file into frontmatter and content
-function splitContent(content: string, filePath: string): MarkdownContent {
+function splitContent(content: string): MarkdownContent {
   const match = content.match(/^---\r?\n([\s\S]+?)\r?\n---\r?\n([\s\S]*)$/m)
   if (!match) {
-    throw new Error(`Missing frontmatter in file: ${filePath}`)
+    return {
+      frontmatter: '',
+      body: content,
+      hasFrontmatter: false,
+    }
   }
 
   return {
     frontmatter: match[1],
     body: match[2],
+    hasFrontmatter: true,
   }
 }
 
@@ -38,10 +44,12 @@ async function getMarkdownFiles(): Promise<string[]> {
 // Format a single Markdown file
 async function formatSingleFile(filePath: string): Promise<boolean> {
   const content = await readFile(filePath, 'utf8')
-  const { frontmatter, body } = splitContent(content, filePath)
+  const { frontmatter, body, hasFrontmatter } = splitContent(content)
 
   const formattedBody = format(body)
-  const newContent = `---\n${frontmatter}\n---\n${formattedBody}`
+  const newContent = hasFrontmatter
+    ? `---\n${frontmatter}\n---\n${formattedBody}`
+    : formattedBody
 
   // Skip if content hasn't changed
   if (content === newContent) {

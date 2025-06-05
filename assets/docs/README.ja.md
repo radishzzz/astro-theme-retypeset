@@ -16,7 +16,7 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
 
 ## 特徴
 
-- AstroとUnoCSSで構築
+- Astro と UnoCSS で構築
 - SEO、サイトマップ、OpenGraph、TOC、RSS、MDX と LaTeX のサポート
 - 多言語対応（i18n）
 - ライト/ダークモード
@@ -42,12 +42,12 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
 
    ```bash
    # リポジトリをクローン
-   git clone <リポジトリURL>
+   git clone <リポジトリ URL>
 
    # プロジェクトディレクトリに移動
    cd <リポジトリ名>
 
-   # pnpmをグローバルにインストール（未インストールの場合）
+   # pnpm をグローバルにインストール（未インストールの場合）
    npm install -g pnpm
 
    # 依存関係をインストール
@@ -58,13 +58,13 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
    ```
 
 3. [テーマガイド](https://retypeset.radishzz.cc/ja/posts/theme-guide/) を参照して、ブログをカスタマイズし、新しい記事を作成します。
-4. [Astroデプロイガイド](https://docs.astro.build/ja/guides/deploy/) を参照して、ブログをNetlify、Vercelなどのプラットフォームにデプロイします。
+4. [Astro デプロイガイド](https://docs.astro.build/ja/guides/deploy/) を参照して、ブログを Netlify、Vercel などのプラットフォームにデプロイします。
 
 &emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
 
 ## アップデート
 
-Retypesetは定期的に [新機能](https://github.com/radishzzz/astro-theme-retypeset/issues/18) をリリースしています。`pnpm update-theme` を実行するだけでテーマを更新できます。マージ競合が発生した場合は、[このビデオ](https://youtu.be/lz5OuKzvadQ?si=sH_ALNgqxrYqNVQT) を参照して手動で解決してください。
+Retypeset は不定期に [新機能](https://github.com/radishzzz/astro-theme-retypeset/issues/18) をリリースしています。`pnpm update-theme` を実行するだけでテーマを更新できます。マージ競合が発生した場合は、[このビデオ](https://youtu.be/lz5OuKzvadQ?si=sH_ALNgqxrYqNVQT) を参照して手動で解決してください。
 
 ## 謝辞
 
