@@ -57,7 +57,7 @@ Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://
    pnpm dev
    ```
 
-3. [テーマガイド](https://retypeset.radishzz.cc/ja/posts/theme-guide/) を参照して、ブログをカスタマイズし、新しい記事を作成します。
+3. [テーマ使用ガイド](https://retypeset.radishzz.cc/ja/posts/theme-guide/) を参照して、ブログをカスタマイズし、新しい記事を作成します。
 4. [Astro デプロイガイド](https://docs.astro.build/ja/guides/deploy/) を参照して、ブログを Netlify、Vercel などのプラットフォームにデプロイします。
 
 &emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)

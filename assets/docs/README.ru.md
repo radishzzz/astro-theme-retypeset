@@ -57,8 +57,8 @@ Retypeset — это статическая тема блога, основан�
    pnpm dev
    ```
 
-3. Обратитесь к [Руководству по теме](https://retypeset.radishzz.cc/ru/posts/theme-guide/) для настройки блога и создания новых статей.
-4. Обратитесь к [Руководству по развертыванию Astro](https://docs.astro.build/en/guides/deploy/) для развертывания блога на Netlify, Vercel или других платформах.
+3. Обратитесь к [Руководство по теме](https://retypeset.radishzz.cc/ru/posts/theme-guide/) для настройки блога и создания новых статей.
+4. Обратитесь к [Руководству по развертыванию Astro](https://docs.astro.build/ru/guides/deploy/) для развертывания блога на Netlify, Vercel или других платформах.
 
 &emsp;[![Deploy to Netlify](../images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](../images/deploy-vercel.svg)](https://vercel.com/new)
 
