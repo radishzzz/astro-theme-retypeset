@@ -22,7 +22,7 @@
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.1",
-    "astro": "^5.9.2",
+    "astro": "^5.9.3",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "astro-robots-txt": "^1.0.0",
