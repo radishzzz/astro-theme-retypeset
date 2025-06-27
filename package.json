@@ -54,9 +54,9 @@
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^24.0.4",
     "@types/sanitize-html": "^2.16.0",
-    "@unocss/eslint-plugin": "66.3.1",
-    "@unocss/preset-attributify": "66.3.1",
-    "@unocss/reset": "66.3.1",
+    "@unocss/eslint-plugin": "66.3.2",
+    "@unocss/preset-attributify": "66.3.2",
+    "@unocss/reset": "66.3.2",
     "astro-eslint-parser": "^1.2.2",
     "autocorrect-node": "^2.14.0",
     "eslint": "^9.29.0",
@@ -66,7 +66,7 @@
     "lint-staged": "^16.1.2",
     "ndarray-pixels": "^5.0.1",
     "typescript": "~5.8.3",
-    "unocss": "66.3.1",
+    "unocss": "66.3.2",
     "unocss-preset-theme": "^0.14.1"
   },
   "lint-staged": {
