@@ -69,6 +69,9 @@ const MarginBottom = isPost && themeConfig.comment?.enabled
 
 <!-- Global Routing Tracking Script -->
 <script>
+import { defaultLocale, moreLocales } from '@/config'
+import { getLangFromPath } from '@/i18n/lang'
+
 // Global Routing History Management
 const ROUTE_HISTORY_KEY = 'retypeset-route-history'
 const MAX_HISTORY_LENGTH = 20
@@ -96,16 +99,75 @@ function saveRouteHistory(history: string[]) {
   }
 }
 
+/**
+ * Extract language-agnostic path from a route
+ */
+function extractBasePath(path: string) {
+  const cleanPath = path.replace(/\/$/, '') || '/'
+
+  // Remove language prefix
+  for (const lang of moreLocales) {
+    if (cleanPath.startsWith(`/${lang}`)) {
+      const withoutLang = cleanPath.substring(`/${lang}`.length) || '/'
+      return withoutLang
+    }
+  }
+
+  return cleanPath === '' ? '/' : cleanPath
+}
+
+/**
+ * Check if two paths represent the same page in different languages
+ */
+function isSamePageDifferentLang(path1: string, path2: string) {
+  return extractBasePath(path1) === extractBasePath(path2)
+}
+
+/**
+ * Convert a path to target language
+ */
+function convertPathToLang(path: string, targetLang: string) {
+  const cleanPath = path.replace(/\/$/, '') || '/'
+
+  // Remove current language prefix
+  for (const lang of moreLocales) {
+    if (cleanPath.startsWith(`/${lang}`)) {
+      const withoutLang = cleanPath.substring(`/${lang}`.length) || '/'
+      // Add target language prefix (unless it's default locale)
+      return targetLang === defaultLocale ? withoutLang : `/${targetLang}${withoutLang}`
+    }
+  }
+
+  // Current path is in default language
+  // Add target language prefix (unless target is also default)
+  return targetLang === defaultLocale ? path : `/${targetLang}${path}`
+}
+
 function addToRouteHistory(path: string) {
   const history = getRouteHistory()
   const lastPath = history[history.length - 1]
 
-  // record only when the path actually changes (ignore hash changes).
+  // Only record when the path actually changes (ignore hash changes)
   if (path !== lastPath) {
-    history.push(path)
-    // limit the history length
-    if (history.length > MAX_HISTORY_LENGTH) {
-      history.splice(0, history.length - MAX_HISTORY_LENGTH)
+    // 🔄 If same page in different language: convert entire history
+    if (lastPath && isSamePageDifferentLang(path, lastPath)) {
+      const newLang = getLangFromPath(path)
+
+      // Convert all paths in history to the new language
+      for (let i = 0; i < history.length; i++) {
+        history[i] = convertPathToLang(history[i], newLang)
+      }
+
+      // Replace the last entry with the new language version
+      history[history.length - 1] = path
+    }
+    // ➕ If different page: add new record
+    else {
+      history.push(path)
+      // Limit the history length
+      if (history.length > MAX_HISTORY_LENGTH) {
+        history.splice(0, history.length - MAX_HISTORY_LENGTH)
+      }
     }
     saveRouteHistory(history)
   }

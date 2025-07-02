@@ -20,7 +20,6 @@ import GoBackIcon from '@/assets/icons/go-back.svg'
 import { navigate } from 'astro:transitions/client'
 import { defaultLocale } from '@/config'
 import { getLangFromPath } from '@/i18n/lang'
-import { buildNextLangPath } from '@/i18n/path'
 
 function setupBackButton() {
   document.getElementById('back-button')?.addEventListener('click', () => {
@@ -32,25 +31,13 @@ function setupBackButton() {
     if (typeof getRouteHistory === 'function') {
       const history = getRouteHistory() as string[]
 
-      // Find the previous different page and convert to current language
+      // Simply find the previous different page
       let targetPath = null
       for (let i = history.length - 2; i >= 0; i--) {
         const historyPath = history[i]
         if (historyPath !== currentPath) {
-          // Adjust target path to current language
-          const targetLang = getLangFromPath(historyPath)
-          let adjustedPath = historyPath
-
-          if (targetLang !== currentLang) {
-            // Convert target path to current language
-            adjustedPath = buildNextLangPath(historyPath, targetLang, currentLang)
-          }
-
-          // Make sure the adjusted path is different from current path
-          if (adjustedPath !== currentPath) {
-            targetPath = adjustedPath
-            break
-          }
+          targetPath = historyPath
+          break
         }
       }
 
