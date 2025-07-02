@@ -1,5 +1,6 @@
 ---
-import GoBackIcon from '@/assets/icons/go-back.svg';
+import GoBackIcon from '@/assets/icons/go-back.svg'
+
 ---
 
 <button
@@ -16,17 +17,63 @@ import GoBackIcon from '@/assets/icons/go-back.svg';
 
 <!-- Go Back Script >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 <script>
-document.addEventListener('click', (e) => {
-  if (e.target instanceof Element && e.target.closest('#back-button')) {
-    // Navigate back if history exists
-    if (window.history.length > 1) {
-      window.history.back()
-      return
+import { navigate } from 'astro:transitions/client'
+import { defaultLocale } from '@/config'
+import { getLangFromPath } from '@/i18n/lang'
+
+function setupBackButton() {
+  document.getElementById('back-button')?.addEventListener('click', () => {
+    const currentPath = window.location.pathname
+    const currentLang = getLangFromPath(currentPath)
+
+    // Get the previous different page path from the global routing history
+    const getRouteHistory = window.getRouteHistory
+    const isSamePageDifferentLang = window.isSamePageDifferentLang
+
+    if (typeof getRouteHistory === 'function' && typeof isSamePageDifferentLang === 'function') {
+      const history = getRouteHistory() as string[]
+
+      // Find a previous page in the same language
+      let targetPath = null
+      for (let i = history.length - 2; i >= 0; i--) {
+        const historyPath = history[i]
+        const historyLang = getLangFromPath(historyPath)
+
+        // Only consider pages in the same language and different from current page
+        if (historyLang === currentLang && historyPath !== currentPath && !isSamePageDifferentLang(historyPath, currentPath)) {
+          targetPath = historyPath
+          break
+        }
+      }
+
+      if (targetPath) {
+        // Use Astro's navigate function to navigate to the target path, keeping the transition effect
+        navigate(targetPath)
+        return
+      }
+
+      // If no same-language target found, navigate to home page in current language
+      const homePath = currentLang === defaultLocale ? '/' : `/${currentLang}/`
+
+      // Don't navigate if already on home page
+      if (currentPath !== homePath) {
+        navigate(homePath)
+        return
+      }
     }
 
-    // Fallback to homepage
-    const siteTitleLink = document.getElementById('site-title-link')
-    siteTitleLink?.click()
-  }
-})
+    // Fallback: Use the browser's back function
+    if (window.history.length > 1) {
+      window.history.back()
+    }
+    else {
+      // Fallback to homepage
+      const siteTitleLink = document.getElementById('site-title-link')
+      siteTitleLink?.click()
+    }
+  })
+}
+
+setupBackButton()
+document.addEventListener('astro:after-swap', setupBackButton)
 </script>

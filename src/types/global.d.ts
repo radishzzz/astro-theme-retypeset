@@ -7,6 +7,8 @@ declare global {
 
   interface Window {
     webkitAudioContext: typeof AudioContext
+    getRouteHistory?: () => string[]
+    isSamePageDifferentLang?: (path1: string, path2: string) => boolean
   }
 
   interface Document {
