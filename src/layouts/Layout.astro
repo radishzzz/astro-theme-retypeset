@@ -9,7 +9,7 @@ import GsapAnimation from '@/components/Widgets/GsapAnimation.astro'
 import MediaEmbeds from '@/components/Widgets/MediaEmbeds.astro'
 import PhotoSwipe from '@/components/Widgets/PhotoSwipe.astro'
 import SoundEffect from '@/components/Widgets/SoundEffect.astro'
-import themeConfig, { defaultLocale, moreLocales } from '@/config'
+import themeConfig from '@/config'
 
 import Head from '@/layouts/Head.astro'
 import { getPageInfo } from '@/utils/page'
@@ -68,12 +68,13 @@ const MarginBottom = isPost && themeConfig.comment?.enabled
 </html>
 
 <!-- Global Routing Tracking Script -->
-<script define:vars={{ defaultLocale, moreLocales }}>
+<script>
 // Global Routing History Management
 const ROUTE_HISTORY_KEY = 'retypeset-route-history'
 const MAX_HISTORY_LENGTH = 20
 
 function getCurrentPagePath() {
+  // 只记录 pathname，忽略 hash
   return window.location.pathname
 }
 
@@ -87,7 +88,7 @@ function getRouteHistory() {
   }
 }
 
-function saveRouteHistory(history) {
+function saveRouteHistory(history: string[]) {
   try {
     localStorage.setItem(ROUTE_HISTORY_KEY, JSON.stringify(history))
   }
@@ -96,54 +97,16 @@ function saveRouteHistory(history) {
   }
 }
 
-/**
- * Extract language-agnostic path from a route
- * Examples:
- * '/' -> '/'
- * '/en/' -> '/'
- * '/en/posts/hello/' -> '/posts/hello/'
- * '/posts/hello/' -> '/posts/hello/'
- */
-function extractBasePath(path) {
-  // Remove trailing slash for consistent comparison
-  const cleanPath = path.replace(/\/$/, '') || '/'
-
-  // Check if path starts with a supported language
-  for (const lang of moreLocales) {
-    if (cleanPath.startsWith(`/${lang}`)) {
-      const withoutLang = cleanPath.substring(`/${lang}`.length) || '/'
-      return withoutLang
-    }
-  }
-
-  return cleanPath === '' ? '/' : cleanPath
-}
-
-/**
- * Check if two paths represent the same page in different languages
- */
-function isSamePageDifferentLang(path1, path2) {
-  return extractBasePath(path1) === extractBasePath(path2)
-}
-
-function addToRouteHistory(path) {
+function addToRouteHistory(path: string) {
   const history = getRouteHistory()
   const lastPath = history[history.length - 1]
 
-  // Only record when the path actually changes
+  // 只在路径真正变化时记录（忽略 hash 变化）
   if (path !== lastPath) {
-    // Don't record if it's the same page in a different language
-    if (lastPath && isSamePageDifferentLang(path, lastPath)) {
-      // Replace the last entry with the new language version
-      history[history.length - 1] = path
-    }
-    else {
-      // Add new path to history
-      history.push(path)
-      // Limit the history length
-      if (history.length > MAX_HISTORY_LENGTH) {
-        history.splice(0, history.length - MAX_HISTORY_LENGTH)
-      }
+    history.push(path)
+    // 限制历史长度
+    if (history.length > MAX_HISTORY_LENGTH) {
+      history.splice(0, history.length - MAX_HISTORY_LENGTH)
     }
     saveRouteHistory(history)
   }
@@ -164,7 +127,6 @@ initRouteTracking()
 document.addEventListener('astro:after-swap', handleRouteChange)
 window.addEventListener('popstate', handleRouteChange)
 
-// Expose global functions for BackButton use
+// Expose global function for BackButton use
 window.getRouteHistory = getRouteHistory
-window.isSamePageDifferentLang = isSamePageDifferentLang
 </script>
