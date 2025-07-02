@@ -7,6 +7,7 @@ declare global {
 
   interface Window {
     webkitAudioContext: typeof AudioContext
+    getRouteHistory?: () => string[]
   }
 
   interface Document {

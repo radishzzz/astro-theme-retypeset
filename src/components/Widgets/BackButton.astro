@@ -1,5 +1,6 @@
 ---
-import GoBackIcon from '@/assets/icons/go-back.svg';
+import GoBackIcon from '@/assets/icons/go-back.svg'
+
 ---
 
 <button
@@ -16,17 +17,55 @@ import GoBackIcon from '@/assets/icons/go-back.svg';
 
 <!-- Go Back Script >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 <script>
-document.addEventListener('click', (e) => {
-  if (e.target instanceof Element && e.target.closest('#back-button')) {
-    // Navigate back if history exists
-    if (window.history.length > 1) {
-      window.history.back()
-      return
+import { navigate } from 'astro:transitions/client'
+import { defaultLocale } from '@/config'
+import { getLangFromPath } from '@/i18n/lang'
+
+function setupBackButton() {
+  document.getElementById('back-button')?.addEventListener('click', () => {
+    const currentPath = window.location.pathname
+    const currentLang = getLangFromPath(currentPath)
+
+    // Get the route history
+    const getRouteHistory = window.getRouteHistory
+    if (typeof getRouteHistory === 'function') {
+      const history = getRouteHistory() as string[]
+
+      // Simply find the previous different page
+      let targetPath = null
+      for (let i = history.length - 2; i >= 0; i--) {
+        const historyPath = history[i]
+        if (historyPath !== currentPath) {
+          targetPath = historyPath
+          break
+        }
+      }
+
+      if (targetPath) {
+        navigate(targetPath)
+        return
+      }
+
+      // If no target found, go to current language home page
+      const homePath = currentLang === defaultLocale ? '/' : `/${currentLang}/`
+      if (currentPath !== homePath) {
+        navigate(homePath)
+        return
+      }
     }
 
-    // Fallback to homepage
-    const siteTitleLink = document.getElementById('site-title-link')
-    siteTitleLink?.click()
-  }
-})
+    // Fallback: Use the browser's back function
+    if (window.history.length > 1) {
+      window.history.back()
+    }
+    else {
+      // Fallback to homepage
+      const siteTitleLink = document.getElementById('site-title-link')
+      siteTitleLink?.click()
+    }
+  })
+}
+
+setupBackButton()
+document.addEventListener('astro:after-swap', setupBackButton)
 </script>
