@@ -74,7 +74,6 @@ const ROUTE_HISTORY_KEY = 'retypeset-route-history'
 const MAX_HISTORY_LENGTH = 20
 
 function getCurrentPagePath() {
-  // 只记录 pathname，忽略 hash
   return window.location.pathname
 }
 
@@ -101,10 +100,10 @@ function addToRouteHistory(path: string) {
   const history = getRouteHistory()
   const lastPath = history[history.length - 1]
 
-  // 只在路径真正变化时记录（忽略 hash 变化）
+  // record only when the path actually changes (ignore hash changes).
   if (path !== lastPath) {
     history.push(path)
-    // 限制历史长度
+    // limit the history length
     if (history.length > MAX_HISTORY_LENGTH) {
       history.splice(0, history.length - MAX_HISTORY_LENGTH)
     }
