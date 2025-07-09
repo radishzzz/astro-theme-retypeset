@@ -51,7 +51,7 @@
     "@lokesh.dhakar/quantize": "^1.4.0",
     "@types/hast": "^3.0.4",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^24.0.10",
+    "@types/node": "^24.0.12",
     "@types/sanitize-html": "^2.16.0",
     "@unocss/eslint-plugin": "66.3.3",
     "@unocss/preset-attributify": "66.3.3",
