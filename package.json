@@ -17,7 +17,7 @@
     "update-theme": "esno scripts/update-theme.ts"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/mdx": "^4.3.1",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.1",
     "@waline/client": "^3.6.0",
@@ -46,7 +46,7 @@
     "@astrojs/check": "^0.9.4",
     "@lokesh.dhakar/quantize": "^1.4.0",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^24.0.13",
+    "@types/node": "^24.0.14",
     "@types/sanitize-html": "^2.16.0",
     "@unocss/eslint-plugin": "66.3.3",
     "@unocss/preset-attributify": "66.3.3",
