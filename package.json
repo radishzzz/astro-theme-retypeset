@@ -17,7 +17,7 @@
     "update-theme": "esno scripts/update-theme.ts"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/mdx": "^4.3.1",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.1",
     "@waline/client": "^3.6.0",
