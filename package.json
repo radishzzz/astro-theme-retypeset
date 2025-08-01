@@ -17,11 +17,11 @@
     "update-theme": "tsx scripts/update-theme.ts"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.1",
+    "@astrojs/mdx": "^4.3.3",
     "@astrojs/partytown": "^2.1.4",
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/sitemap": "^3.4.2",
     "@waline/client": "^3.6.0",
-    "astro": "^5.12.3",
+    "astro": "^5.12.8",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "canvaskit-wasm": "^0.40.0",
@@ -58,7 +58,7 @@
     "fast-glob": "^3.3.3",
     "lint-staged": "^16.1.2",
     "ndarray-pixels": "^5.0.1",
-    "simple-git-hooks": "^2.13.0",
+    "simple-git-hooks": "^2.13.1",
     "tsx": "^4.20.3",
     "typescript": "~5.8.3",
     "unocss": "66.3.3",
