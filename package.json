@@ -17,7 +17,7 @@
     "update-theme": "tsx scripts/update-theme.ts"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.3",
+    "@astrojs/mdx": "^4.3.4",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.5.0",
     "@waline/client": "^3.6.0",
