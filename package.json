@@ -17,11 +17,11 @@
     "update-theme": "tsx scripts/update-theme.ts"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.5",
+    "@astrojs/mdx": "^4.3.6",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.5.1",
     "@waline/client": "^3.6.0",
-    "astro": "^5.13.7",
+    "astro": "^5.13.10",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "canvaskit-wasm": "^0.40.0",
@@ -39,7 +39,7 @@
     "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
     "sanitize-html": "^2.17.0",
-    "sharp": "^0.34.3",
+    "sharp": "^0.34.4",
     "twikoo": "^1.6.44",
     "unist-util-visit": "^5.0.0"
   },
