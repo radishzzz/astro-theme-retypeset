@@ -20,17 +20,17 @@
     "@astrojs/mdx": "^4.3.5",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.5.1",
-    "@waline/client": "^3.6.0",
+    "@waline/client": "^3.8.0",
     "astro": "^5.13.7",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "canvaskit-wasm": "^0.40.0",
     "feed": "^5.1.0",
-    "katex": "^0.16.22",
-    "lite-youtube-embed": "^0.3.3",
+    "katex": "^0.16.25",
+    "lite-youtube-embed": "^0.3.4",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
-    "mermaid": "^11.11.0",
+    "mermaid": "^11.12.1",
     "node-html-parser": "^7.0.1",
     "reading-time": "^1.5.0",
     "rehype-katex": "^7.0.1",
@@ -39,7 +39,7 @@
     "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
     "sanitize-html": "^2.17.0",
-    "sharp": "^0.34.3",
+    "sharp": "^0.34.5",
     "twikoo": "^1.6.44",
     "unist-util-visit": "^5.0.0"
   },
@@ -60,6 +60,7 @@
     "fast-glob": "^3.3.3",
     "lint-staged": "^16.1.6",
     "ndarray-pixels": "^5.0.1",
+    "playwright": "^1.56.1",
     "simple-git-hooks": "^2.13.1",
     "tsx": "^4.20.5",
     "typescript": "~5.9.2",
@@ -68,7 +69,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@qwik.dev/partytown@0.11.1": "patches/@qwik.dev__partytown@0.11.1.patch"
+      "@qwik.dev/partytown@0.11.2": "patches/@qwik.dev__partytown@0.11.2.patch"
     }
   },
   "simple-git-hooks": {
