@@ -7,6 +7,7 @@ import { getNextGlobalLangPath, getNextSupportedLangPath } from '@/i18n/path'
 
 interface Props {
   supportedLangs: Language[]
+  placement?: 'floating' | 'footer'
 }
 
 const {
@@ -14,7 +15,7 @@ const {
   dark: { background: darkMode },
 } = themeConfig.color
 
-const { supportedLangs } = Astro.props
+const { supportedLangs, placement = 'floating' } = Astro.props as Props
 const currentPath = Astro.url.pathname
 
 // Check if there are other languages to switch
@@ -27,9 +28,15 @@ const nextUrl = supportedLangs.length > 0
 
 <div
   class:list={[
-  'absolute right-7.25vw top-14.6 flex gap-6 min-[823px]:max-lg:right-[calc(50vw-22rem)]',
-  'lg:(fixed bottom-[min(10.27rem+1.92vw,12rem)] right-[max(5rem,calc(50vw-35rem))] top-auto w-14rem)',
-]}
+    ...(placement === 'floating'
+      ? [
+          'absolute right-7.25vw top-14.6 flex gap-6 min-[823px]:max-lg:right-[calc(50vw-22rem)]',
+          'lg:(fixed bottom-[min(10.27rem+1.92vw,12rem)] right-[max(5rem,calc(50vw-35rem))] top-auto w-14rem)',
+        ]
+      : placement === 'footer'
+      ? ['flex gap-4 mb-[4px]']
+      : []),
+  ]}
 >
   <!-- Language Switcher -->
   {showLanguageSwitcher && (

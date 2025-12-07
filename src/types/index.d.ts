@@ -41,6 +41,7 @@ export interface ThemeConfig {
     toc: boolean
     katex: boolean
     reduceMotion: boolean
+    layout?: 'sidebar' | 'centered'
   }
   comment: {
     enabled: boolean

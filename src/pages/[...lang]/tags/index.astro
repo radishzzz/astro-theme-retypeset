@@ -1,6 +1,6 @@
 ---
 import TagList from '@/components/TagList.astro'
-import { allLocales } from '@/config'
+import { allLocales, themeConfig } from '@/config'
 import { getLangFromLocale, getLangRouteParam } from '@/i18n/lang'
 import Layout from '@/layouts/Layout.astro'
 import { getAllTags } from '@/utils/content'
@@ -11,13 +11,14 @@ export async function getStaticPaths() {
   }))
 }
 
+const isLayoutCentered = themeConfig.global.layout === 'centered'
 const currentLang = getLangFromLocale(Astro.currentLocale)
 const allTags = await getAllTags(currentLang)
 ---
 
 <Layout>
   <!-- Decorative Line -->
-  <div class="uno-decorative-line" />
+  {!isLayoutCentered && <div class="uno-decorative-line" />}
   <!-- Tag List -->
   <TagList
     tags={allTags}

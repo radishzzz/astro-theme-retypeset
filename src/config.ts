@@ -72,6 +72,8 @@ export const themeConfig: ThemeConfig = {
     katex: true, // true | false
     // reduce motion
     reduceMotion: false, // true | false
+    // website layout
+    layout: 'sidebar', // sidebar | centered
   },
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 

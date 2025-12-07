@@ -1,7 +1,7 @@
 ---
 import PostList from '@/components/PostList.astro'
 import TagList from '@/components/TagList.astro'
-import { allLocales } from '@/config'
+import { allLocales, themeConfig } from '@/config'
 import { getLangFromLocale, getLangRouteParam } from '@/i18n/lang'
 import Layout from '@/layouts/Layout.astro'
 import { getAllTags, getPostsByTag, getTagSupportedLangs } from '@/utils/content'
@@ -22,6 +22,7 @@ interface Props {
 }
 
 const { tag } = Astro.props
+const isLayoutCentered = themeConfig.global.layout === 'centered'
 const currentLang = getLangFromLocale(Astro.currentLocale)
 const posts = await getPostsByTag(tag, currentLang)
 const allTags = await getAllTags(currentLang)
@@ -30,7 +31,7 @@ const supportedLangs = await getTagSupportedLangs(tag)
 
 <Layout supportedLangs={supportedLangs}>
   <!-- Decorative Line -->
-  <div class="uno-decorative-line" />
+  {!isLayoutCentered && <div class="uno-decorative-line" />}
   <!-- Tag List -->
   <TagList
     tags={allTags}

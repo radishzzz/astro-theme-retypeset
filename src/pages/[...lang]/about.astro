@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content'
-import { allLocales } from '@/config'
+import { allLocales, themeConfig } from '@/config'
 import { getLangFromLocale, getLangRouteParam } from '@/i18n/lang'
 import Layout from '@/layouts/Layout.astro'
 
@@ -10,6 +10,7 @@ export async function getStaticPaths() {
   }))
 }
 
+const isLayoutCentered = themeConfig.global.layout === 'centered'
 const currentLang = getLangFromLocale(Astro.currentLocale)
 // Get about page content with different language
 const allAboutEntries = await getCollection('about')
@@ -20,7 +21,7 @@ const { Content } = aboutEntry ? await render(aboutEntry) : { Content: null }
 
 <Layout>
   <!-- Decorative Line -->
-  <div class="uno-decorative-line" />
+  {!isLayoutCentered && <div class="uno-decorative-line" />}
   <!-- About Page Content -->
   <div class="heti">
     {Content && <Content />}

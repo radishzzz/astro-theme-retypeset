@@ -1,6 +1,6 @@
 ---
 import PostList from '@/components/PostList.astro'
-import { allLocales } from '@/config'
+import { allLocales, themeConfig } from '@/config'
 import { getLangFromLocale, getLangRouteParam } from '@/i18n/lang'
 import Layout from '@/layouts/Layout.astro'
 import { getPinnedPosts, getPostsByYear } from '@/utils/content'
@@ -11,6 +11,7 @@ export async function getStaticPaths() {
   }))
 }
 
+const isLayoutCentered = themeConfig.global.layout === 'centered'
 const currentLang = getLangFromLocale(Astro.currentLocale)
 const pinnedPosts = await getPinnedPosts(currentLang)
 const postsByYear = await getPostsByYear(currentLang)
@@ -20,15 +21,17 @@ const postsByYear = await getPostsByYear(currentLang)
   <!-- Pinned Posts -->
   {pinnedPosts.length > 0 && (
     <section class="mb-7.5">
-      <div class="uno-decorative-line" />
+      {!isLayoutCentered && <div class="uno-decorative-line" />}
       <PostList posts={pinnedPosts} lang={currentLang} pinned={true} />
     </section>
   )}
 
   <!-- Regular Posts -->
-  {[...postsByYear.entries()].map(([_year, posts]) => (
+  {[...postsByYear.entries()].map(([_year, posts], index) => (
     <section class="mb-7.5">
-      <div class="uno-decorative-line" />
+      {!(isLayoutCentered && pinnedPosts.length === 0 && index === 0) && (
+        <div class="uno-decorative-line" />
+      )}
       <PostList posts={posts} lang={currentLang} />
     </section>
   ))}

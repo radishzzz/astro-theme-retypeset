@@ -1,0 +1,13 @@
+---
+import { themeConfig } from '@/config'
+
+const { author } = themeConfig.site
+const { startYear } = themeConfig.footer
+
+const currentYear = new Date().getFullYear()
+const year = Number(startYear) === currentYear
+  ? startYear
+  : `${startYear}-${currentYear}`
+---
+
+<p>© {year} {author}</p>

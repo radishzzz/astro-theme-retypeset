@@ -1,0 +1,58 @@
+---
+import { themeConfig } from '@/config'
+import { getLangFromPath } from '@/i18n/lang'
+import { getLocalizedPath } from '@/i18n/path'
+
+const { links } = themeConfig.footer
+const currentLang = getLangFromPath(Astro.url.pathname)
+
+const socialLinks = links.map(({ name, url }) => {
+  const isRSS = url === '/atom.xml' || url === '/rss.xml'
+  const isEmail = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i.test(url)
+
+  if (isRSS) {
+    const localizedPath = getLocalizedPath(url, currentLang)
+    const href = import.meta.env.DEV
+      ? localizedPath
+      : localizedPath.slice(0, -1)
+
+    return {
+      name,
+      href,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    }
+  }
+
+  if (isEmail) {
+    const href = `mailto:${url}`
+    return {
+      name,
+      href,
+      'data-umami-event': 'outbound-link-click',
+      'data-umami-event-url': href,
+    }
+  }
+
+  return {
+    name,
+    'href': url,
+    'target': '_blank',
+    'rel': 'noopener noreferrer',
+    'data-umami-event': 'outbound-link-click',
+    'data-umami-event-url': url,
+  }
+})
+---
+
+<p>
+  {socialLinks.map((link, index) => (
+    <>
+      <a
+        class="highlight-hover py-0.8 transition-colors after:bottom-0.35em hover:c-primary"
+        {...link}
+      >{link.name}</a>
+      {index < socialLinks.length - 1 && '/'}
+    </>
+  ))}
+</p>

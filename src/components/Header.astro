@@ -5,6 +5,7 @@ import { getPageInfo } from '@/utils/page'
 
 const { currentLang, getLocalizedPath, isPost } = getPageInfo(Astro.url.pathname)
 const { title, subtitle, i18nTitle } = themeConfig.site
+const isLayoutCentered = themeConfig.global.layout === 'centered'
 
 const currentUI = ui[currentLang as keyof typeof ui] ?? {}
 const headerTitle = i18nTitle ? currentUI.title : title
@@ -16,7 +17,10 @@ const SubtitleTag = isPost ? 'div' : 'h2'
 
 <header
   class:list={[
-    'lg:(uno-desktop-column top-20) cjk:tracking-wide',
+    !isLayoutCentered
+      ? 'lg:(uno-desktop-column top-20)'
+      : 'text-center mb-12',
+    'cjk:tracking-wide',
     isPost
     ? 'mb-10.8'
     : 'mb-10.5',
@@ -25,6 +29,7 @@ const SubtitleTag = isPost ? 'div' : 'h2'
   <TitleTag
     class:list={[
       'font-bold font-title',
+      isLayoutCentered && 'text-center w-full',
       isPost
         ? `mb-2.8 mt-3 text-5.375 c-secondary lg:(mb-1.8 mt-0 text-9 c-primary)`
         : `mb-1.8 w-75% text-8 c-primary lg:(w-full text-9)`,
@@ -49,7 +54,8 @@ const SubtitleTag = isPost ? 'div' : 'h2'
     <SubtitleTag
       class:list={[
         'text-3.5 c-secondary font-navbar lg:text-4',
-        isPost
+        isLayoutCentered && 'text-center w-full',
+        isPost && !isLayoutCentered
         ? `op-0 lg:op-100`
         : 'w-75% lg:w-full',
       ]}
@@ -58,4 +64,5 @@ const SubtitleTag = isPost ? 'div' : 'h2'
       {headerSubtitle}
     </SubtitleTag>
   )}
+  {isLayoutCentered && <hr class="mt-8 w-full border-secondary/20" />}
 </header>

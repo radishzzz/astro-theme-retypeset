@@ -2,7 +2,12 @@
 import { ui } from '@/i18n/ui'
 import { getPageInfo } from '@/utils/page'
 
+interface Props {
+  mode?: 'sidebar' | 'footer'
+}
+
 const { currentLang, isHome, isPost, isTag, isAbout, getLocalizedPath } = getPageInfo(Astro.url.pathname)
+const { mode = 'sidebar' } = Astro.props as Props
 const currentUI = ui[currentLang as keyof typeof ui] ?? {}
 
 const isPostActive = isHome || isPost
@@ -37,12 +42,19 @@ const navItems = [
 <nav
   aria-label="Site Navigation"
   class:list={[
-    'mb-10.5 text-3.6 font-semibold leading-2.45em font-navbar',
-    'lg:(uno-desktop-column text-4 bottom-[min(9.04rem+3.85vw,12.5rem)]) cjk:tracking-wide',
-    isPost ? 'hidden lg:block' : '',
+    'text-3.6 font-semibold font-navbar leading-2.45em',
+    ...(mode === 'sidebar'
+      ? [
+          'mb-10.5',
+          'lg:(uno-desktop-column text-4 bottom-[min(9.04rem+3.85vw,12.5rem)]) cjk:tracking-wide',
+          isPost ? 'hidden lg:block' : '',
+        ]
+      : []),
   ]}
 >
-  <ul>
+  <ul
+    class:list={[{ 'flex flex-wrap items-center gap-6': mode === 'footer' }]}
+  >
     {navItems.map(item => (
       <li>
         <a
