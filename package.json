@@ -26,7 +26,7 @@
     "astro-og-canvas": "^0.7.2",
     "canvaskit-wasm": "^0.40.0",
     "feed": "^5.1.0",
-    "katex": "^0.16.25",
+    "katex": "^0.16.27",
     "lite-youtube-embed": "^0.3.4",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
