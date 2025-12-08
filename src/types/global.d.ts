@@ -6,6 +6,7 @@ declare global {
   }
 
   interface Window {
+    themeToggleInitialized?: boolean
     webkitAudioContext: typeof AudioContext
   }
   interface Document {
