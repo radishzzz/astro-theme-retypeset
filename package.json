@@ -44,10 +44,10 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.1",
+    "@antfu/eslint-config": "^6.7.3",
     "@astrojs/check": "^0.9.6",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^25.0.2",
+    "@types/node": "^25.0.3",
     "@types/sanitize-html": "^2.16.0",
     "@unocss/eslint-plugin": "66.5.10",
     "@unocss/preset-attributify": "66.5.10",
