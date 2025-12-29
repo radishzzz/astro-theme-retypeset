@@ -49,9 +49,9 @@
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^25.0.3",
     "@types/sanitize-html": "^2.16.0",
-    "@unocss/eslint-plugin": "66.5.10",
-    "@unocss/preset-attributify": "66.5.10",
-    "@unocss/reset": "66.5.10",
+    "@unocss/eslint-plugin": "66.5.11",
+    "@unocss/preset-attributify": "66.5.11",
+    "@unocss/reset": "66.5.11",
     "astro-eslint-parser": "^1.2.2",
     "autocorrect-node": "^2.14.0",
     "eslint": "^9.39.2",
@@ -62,7 +62,7 @@
     "simple-git-hooks": "^2.13.1",
     "tsx": "^4.21.0",
     "typescript": "~5.9.3",
-    "unocss": "66.5.10",
+    "unocss": "66.5.11",
     "unocss-preset-theme": "^0.14.1"
   },
   "pnpm": {
