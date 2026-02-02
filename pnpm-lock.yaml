@@ -32,8 +32,8 @@ importers:
         specifier: ^2.3.9
         version: 2.3.9(@types/node@25.0.10)(jiti@2.6.1)(rollup@4.56.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       astro-og-canvas:
-        specifier: ^0.10.0
-        version: 0.10.0(astro@5.16.15(@types/node@25.0.10)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
+        specifier: ^0.10.1
+        version: 0.10.1(astro@5.16.15(@types/node@25.0.10)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       canvaskit-wasm:
         specifier: ^0.40.0
         version: 0.40.0
@@ -66,7 +66,7 @@ importers:
         version: 7.0.1
       rehype-mermaid:
         specifier: ^3.0.0
-        version: 3.0.0(playwright@1.58.0)
+        version: 3.0.0(playwright@1.58.1)
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0
@@ -132,8 +132,8 @@ importers:
         specifier: ^16.2.7
         version: 16.2.7
       playwright:
-        specifier: ^1.58.0
-        version: 1.58.0
+        specifier: ^1.58.1
+        version: 1.58.1
       simple-git-hooks:
         specifier: ^2.13.1
         version: 2.13.1
@@ -1634,8 +1634,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro-og-canvas@0.10.0:
-    resolution: {integrity: sha512-JkSIYEo2sTJiuht7iVQ2CNT38+rrlvkRpJkqjA58WDFHdymgWktoT9zLkjEkn2u9K2zeZx2GTev16IBJzIoZNQ==}
+  astro-og-canvas@0.10.1:
+    resolution: {integrity: sha512-cUjsWIOkDBi9Bfkgta1Cr45m2UnTX/jW+tK406SVcD1idhqIHrGD+M5qtwGcJ6OanHeWSgyHGmzQuzELGAwPKg==}
     peerDependencies:
       astro: ^5.0.0 || ^6.0.0-alpha
 
@@ -3460,13 +3460,13 @@ packages:
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
-  playwright-core@1.58.0:
-    resolution: {integrity: sha512-aaoB1RWrdNi3//rOeKuMiS65UCcgOVljU46At6eFcOFPFHWtd2weHRRow6z/n+Lec0Lvu0k9ZPKJSjPugikirw==}
+  playwright-core@1.58.1:
+    resolution: {integrity: sha512-bcWzOaTxcW+VOOGBCQgnaKToLJ65d6AqfLVKEWvexyS3AS6rbXl+xdpYRMGSRBClPvyj44njOWoxjNdL/H9UNg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.58.0:
-    resolution: {integrity: sha512-2SVA0sbPktiIY/MCOPX8e86ehA/e+tDNq+e5Y8qjKYti2Z/JG7xnronT/TXTIkKbYGWlCbuucZ6dziEgkoEjQQ==}
+  playwright@1.58.1:
+    resolution: {integrity: sha512-+2uTZHxSCcxjvGc5C891LrS1/NlxglGxzrC4seZiVjcYVQfUa87wBL6rTDqzGjuoWNjnBzRqKmF6zRYGMvQUaQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5983,7 +5983,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-og-canvas@0.10.0(astro@5.16.15(@types/node@25.0.10)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
+  astro-og-canvas@0.10.1(astro@5.16.15(@types/node@25.0.10)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
     dependencies:
       astro: 5.16.15(@types/node@25.0.10)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       canvaskit-wasm: 0.40.0
@@ -7955,12 +7955,12 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  mermaid-isomorphic@3.0.4(playwright@1.58.0):
+  mermaid-isomorphic@3.0.4(playwright@1.58.1):
     dependencies:
       '@fortawesome/fontawesome-free': 6.7.2
       mermaid: 11.12.2
     optionalDependencies:
-      playwright: 1.58.0
+      playwright: 1.58.1
 
   mermaid@11.12.2:
     dependencies:
@@ -8475,11 +8475,11 @@ snapshots:
       exsolve: 1.0.8
       pathe: 2.0.3
 
-  playwright-core@1.58.0: {}
+  playwright-core@1.58.1: {}
 
-  playwright@1.58.0:
+  playwright@1.58.1:
     dependencies:
-      playwright-core: 1.58.0
+      playwright-core: 1.58.1
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -8604,19 +8604,19 @@ snapshots:
       unist-util-visit-parents: 6.0.2
       vfile: 6.0.3
 
-  rehype-mermaid@3.0.0(playwright@1.58.0):
+  rehype-mermaid@3.0.0(playwright@1.58.1):
     dependencies:
       '@types/hast': 3.0.4
       hast-util-from-html-isomorphic: 2.0.0
       hast-util-to-text: 4.0.2
-      mermaid-isomorphic: 3.0.4(playwright@1.58.0)
+      mermaid-isomorphic: 3.0.4(playwright@1.58.1)
       mini-svg-data-uri: 1.4.4
       space-separated-tokens: 2.0.2
       unified: 11.0.5
       unist-util-visit-parents: 6.0.2
       vfile: 6.0.3
     optionalDependencies:
-      playwright: 1.58.0
+      playwright: 1.58.1
 
   rehype-parse@9.0.1:
     dependencies:
