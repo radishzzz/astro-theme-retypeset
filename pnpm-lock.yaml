@@ -83,8 +83,8 @@ importers:
         specifier: ^0.34.5
         version: 0.34.5
       twikoo:
-        specifier: ^1.6.44
-        version: 1.6.44
+        specifier: ^1.7.1
+        version: 1.7.1
       unist-util-visit:
         specifier: ^5.1.0
         version: 5.1.0
@@ -3896,8 +3896,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  twikoo@1.6.44:
-    resolution: {integrity: sha512-Y3YfGtMelWT+1XxZS8SmGXkHZ6/26ry1ZteKKBNTYV0oA+o5/2ELUMi4ta2zYD/V0wGZGv6EXJ6HJU8GTPVh4g==}
+  twikoo@1.7.1:
+    resolution: {integrity: sha512-+7e6yRoa0nE5pjuuo/GIhBeMd705WRmoAL+Fj7cMiJ6npYtDWtBmuW++4FGapFQEB92/AtSkFFf2OnPmb9OZag==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -8977,7 +8977,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  twikoo@1.6.44: {}
+  twikoo@1.7.1: {}
 
   type-check@0.4.0:
     dependencies:
