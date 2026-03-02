@@ -57,7 +57,7 @@
     "eslint": "^10.0.2",
     "eslint-plugin-astro": "^1.6.0",
     "fast-glob": "^3.3.3",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^16.3.1",
     "playwright": "^1.58.2",
     "simple-git-hooks": "^2.13.1",
     "tsx": "^4.21.0",
