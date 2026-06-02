@@ -20,6 +20,7 @@
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/partytown": "^2.1.6",
     "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/vercel": "^10.0.8",
     "@waline/client": "^3.13.0",
     "astro": "^6.1.5",
     "astro-compress": "^2.4.1",
