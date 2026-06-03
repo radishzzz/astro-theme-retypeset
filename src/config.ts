@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
     // site title
     title: 'Bytes Lab',
     // site subtitle
-    subtitle: 'Where depth meets simplicity.',
+    subtitle: 'Where Depth Meets Simplicity.',
     // site description
     description: 'An open engineering journal by Bytes Lab — raw deep-dives into backend architecture, system design, and the hard lessons learned while shipping real software.',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
@@ -40,7 +40,7 @@ export const themeConfig: ThemeConfig = {
       background: 'oklch(96% 0.005 298)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
+      highlight: 'oklch(0.6231 0.1232 165.5 / 0.5)', // #1d9e75
     },
     dark: {
       // primary color
@@ -50,7 +50,7 @@ export const themeConfig: ThemeConfig = {
       // background color
       background: 'oklch(22% 0.005 298)',
       // highlight color
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
+      highlight: 'oklch(0.6231 0.1232 165.5 / 0.5)', // #1d9e75
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
@@ -61,9 +61,9 @@ export const themeConfig: ThemeConfig = {
     locale: 'en', // de | en | es | fr | ja | ko | pl | pt | ru | zh | zh-tw
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['zh', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: [], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
     // post font style
-    fontStyle: 'sans', // sans | serif
+    fontStyle: 'serif', // sans | serif
     // post date format
     dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD | MM-DD-YYYY | DD-MM-YYYY | MMM D YYYY | D MMM YYYY
     // enable table of contents
@@ -102,10 +102,10 @@ export const themeConfig: ThemeConfig = {
     // https://waline.js.org/en/
     waline: {
       // server url
-      serverURL: 'https://retypeset-comment.radishzz.cc',
+      serverURL: '',
       // emoji url
       emoji: [
-        'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+        '',
         // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
         // more emojis: https://waline.js.org/en/guide/features/emoji.html
       ],
@@ -167,7 +167,7 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/dennis-nw',
+        url: 'https://github.com/dennis-nw/bytes-lab-blog',
       },
       {
         name: 'Email',

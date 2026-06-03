@@ -7,8 +7,8 @@ tags:
   - Intro
 draft: false
 pin: 99
-toc: true
-lang: ''
+toc: false
+lang: 'en'
 abbrlink: ''
 ---
 
@@ -20,7 +20,7 @@ Bytes Lab is my software studio, a space focused on AI, design, and infrastructu
 
 The way I see it, great engineering boils down to a few core rules:
 
-* **Performance is a feature.** If software isn't fast, zero-latency, and rock-solid, it isn't finished.
+* **Performance is a feature.** If software isn't fast, low-latency, and rock-solid, it isn't finished.
 * **Complexity should be invisible.** A user interface should be intuitive and dead-simple. All the heavy-duty orchestration belongs under the hood where the user never has to see it, but always benefits from it.
 * **Build out loud.** I appreciate high-concurrency systems, robust data pipelines, and transparency in how things are engineered.
 
