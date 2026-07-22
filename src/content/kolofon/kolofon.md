@@ -2,7 +2,7 @@
 lang: pl
 ---
 
-A prościej: lista różnych narzędzi, jakich użyłam do zbudowania tej strony.
+A prościej: lista narzędzi, jakich użyłam do zbudowania tej strony.
 
 ## Tech stack
 
@@ -17,6 +17,6 @@ Favikonę mam dzięki [Freepik](https://www.freepik.com/icon/sunflower_7403160#f
 
 ## Hosting & inne
 
-Jako, że programistka ze mnie mierna, to w całym procesie wspomagam się [Cline](https://cline.bot/).
+Jako, że programistka ze mnie mierna, to w całym procesie wspomagam się [Cursorem](https://cursor.com/).
 
 Strona jest w całości statyczna - hostowana na [Vercel](https://vercel.com/).

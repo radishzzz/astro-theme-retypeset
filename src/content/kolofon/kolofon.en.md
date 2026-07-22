@@ -2,7 +2,7 @@
 lang: en
 ---
 
-Or more simply: a list of various tools I used to build this website.
+Or more simply: a list of tools I used to build this website.
 
 ## Tech stack
 
@@ -16,6 +16,6 @@ I have the favicon thanks to [Freepik](https://www.freepik.com/icon/sunflower_74
 
 ## Hosting & other
 
-Since I'm a mediocre programmer, I use [Cline](https://cline.bot/) to help me throughout the entire process.
+Since I'm a mediocre programmer, I use [Cursor](https://cursor.com/) to help me throughout the entire process.
 
 The site is entirely static - hosted on [Vercel](https://vercel.com/).

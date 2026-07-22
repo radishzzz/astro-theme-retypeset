@@ -16,17 +16,17 @@ Ten [cyfrowy ogród](https://maggieappleton.com/garden-history) to mój osobisty
 
 ### Praca
 
-Od zawsze interesowało mnie wiele różnych rzeczy, a najlepiej odnajdgywałam się na pograniczu odmiennych tematów - jako ktoś, kto ostatecznie spaja je w całość i doprowadza do powstania czegoś nowego.
+Od zawsze interesowało mnie wiele różnych rzeczy, a najlepiej odnajdywałam się na pograniczu odmiennych tematów - jako ktoś, kto ostatecznie spaja je w całość i doprowadza do powstania czegoś nowego. Obecnie pracuję jako Senior Product Manager w [WP Engine](https://wpengine.com/), gdzie rozwijam platformę hostingową stron zbudowanych na WordPressie. Moim głównym zainteresowaniem zawodowym jest budowanie i rozwój produktów platformowych.
 
 Uwielbiam uczyć się nowych rzeczy i obserwować, jak z połączenia pozornie niezwiązanych ze sobą tematów powstają nowe pomysły - oraz jak koncepcje i teorie z jednego obszaru mogą stać się soczewką, przez którą można analizować zupełnie odmienne idee.
 
-Naturalnie przychodzi mi też organizowanie różnych wydarzeń czy projektów - i właśnie w tym kierunku potoczyła się moja dotychczasowa kariera. Na studiach pracowałam w [samorządzie studenckim](https://samorzad.agh.edu.pl/), w pierwszych latach pracy założyłam meet-up [Kraków Tableau User Group](https://community.tableau.com/s/group/0F94T000000gQb0SAE/krakow), a obecnie pracuję jako product manager w [WP Engine](https://wpengine.com/).
+Naturalnie przychodzi mi też organizowanie różnych wydarzeń czy projektów - i właśnie w tym kierunku potoczyła się moja dotychczasowa kariera. Na studiach pracowałam w [samorządzie studenckim](https://samorzad.agh.edu.pl/), a w pierwszych latach pracy założyłam meet-up [Kraków Tableau User Group](https://community.tableau.com/s/group/0F94T000000gQb0SAE/krakow).
 
 ### Zainteresowania
 
 **Procesy uczenia się i narzędzia myślenia** - z racji mojej pracy niemal każdego dnia stykam się z zupełnie nowymi sytuacjami i z koniecznością uczenia się nowych rzeczy (zazwyczaj szybko i sprawnie). W dodatku na co dzień mieszkam w Budapeszcie i po godzinach uczę się języka węgierskiego. Ta sytuacja (w połączeniu z moimi problemami z koncentracją) sprawiła, że zaczęłam się interesować [modelami mentalnymi](https://fs.blog/mental-models/) i różnego rodzaju [narzędziami do myślenia](https://en.wikipedia.org/wiki/Tools_for_Thought) - technikami oraz narzędziami wspomagającymi poznawanie. Zakładam, że duża część zawartości tego miejsca skupiać się będzie właśnie na tym.
 
-**Fotografia** - Zainteresowałam się fotografią w liceum, kiedy to wraz z koleżankami organizowałyśmy prowizoryczne "sesyjki" w piwnicach naszych domów czy w pobliskich lasach czy polach. Obecnie jestem w fazie miesiąca miodowego z fotografią analogową (posiadam [Konica T3 Autoreflex](https://www.filmshooterscollective.com/analog-film-photography-blog/konica-autoreflex-t3-review-brett-rogers-3-30) wraz z obiektywem Hexanon AR 50/1.7) i przygotowuję się do [kursu fotografii eksperymentalnej](https://open.mome.hu/experimentalis-foto/) na Moholy-Nagy Művészeti Egyetem. Duży wpływ na mój styl mają węgierscy fotografowie tacy, jak André Kértesz, Laszló Moholy-Nagy czy Szilvia Plachy.
+**Fotografia** - Zainteresowałam się fotografią w liceum, kiedy to wraz z koleżankami organizowałyśmy prowizoryczne "sesyjki" w piwnicach naszych domów czy w pobliskich lasach czy polach. Obecnie jestem w fazie miesiąca miodowego z fotografią analogową (posiadam [Konica T3 Autoreflex](https://www.filmshooterscollective.com/analog-film-photography-blog/konica-autoreflex-t3-review-brett-rogers-3-30) wraz z obiektywem Hexanon AR 50/1.7) i ukończyłam [kurs fotografii eksperymentalnej](https://open.mome.hu/experimentalis-foto/) na Moholy-Nagy Művészeti Egyetem. Duży wpływ na mój styl mają węgierscy fotografowie tacy, jak André Kértesz, Laszló Moholy-Nagy czy Szilvia Plachy.
 
 **Religioznawstwo** - ciekawią mnie rozmaite tematy związane z religią i mitologią, o których zazwyczaj słucham w wolnych chwilach. Od [mistycyzmu w judaizmie](https://www.youtube.com/watch?v=XzbNq_kfLKU), przez [drzewo genealogiczne chrześcijańskich denominacji na świecie](https://www.youtube.com/watch?v=uzuYZi749CM&list=PL5c7YT7oEpRSIQysIgyXl5s-hFm9yF_kY) po [ośmiogodzinny iceberg tradycyjnego katolicyzmu](https://www.youtube.com/watch?v=4UNIvwNfSUA). Chciałabym lepiej poznać historię początków chrześcijaństwa.
 
@@ -56,7 +56,7 @@ Wierzę, że obecnie największym zagrożeniem stojącym przed ludźmi jest niep
 
 Praca jest dla mnie sposobem aktywnego, pożytecznego uczestnictwa w życiu społecznym i tworzenia wartości. Czerpię satysfakcję z procesu kreacji – z obserwowania, jak moja energia i czas przekształcają się w konkretne efekty. Przez pracę chcę rozwiązywać istotne problemy w sposób, który realnie poprawia jakość życia innych ludzi.
 
-Dobrą pracę definiuję jako jasne określanie celów i skuteczność w ich osiąganiu, a nie przez sam włożony wysiłek. Cenię sprawne, nieskomplikowane procesy i współpracę zespołową w dążeniu do wspólnych zamierzeń.
+Dobrą pracę definiuję jako jasne określanie celów i skuteczność w ich osiąganiu, a nie przez sam włożony w nią wysiłek. Cenię sprawne, nieskomplikowane procesy i współpracę zespołową w dążeniu do wspólnych zamierzeń.
 
 Praca jest dla mnie źródłem bezpieczeństwa finansowego – zarabiam, by zapewnić stabilność sobie i mojej rodzinie, a także by móc kupić to, co cenię najbardziej: czas. Gdybym nie musiała pracować dla pieniędzy, nadal chciałabym tworzyć – wprowadzać w świat rzeczy, których wcześniej w nim nie było. Wierzę, że w każdym zadaniu można odnaleźć pasję. Nie angażuję się jednak w działania, których wolałabym widzieć mniej w otaczającym mnie świecie. Wierzę, że istnieje nieskończona liczba sposobów na to, aby wywrzeć pozytywny wpływ na świat i istotne jest, aby wybierać te, które są zgodne z naszymi naturalnymi talentami.
 
