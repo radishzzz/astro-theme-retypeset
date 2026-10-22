@@ -62,7 +62,9 @@ Retypeset is a static blog theme based on the [Astro](https://astro.build/) fram
 3. Refer to the [Theme Guide](https://retypeset.radishzz.cc/en/posts/theme-guide/) to customize your blog and create new posts.
 4. Refer to the [Astro Deployment Guides](https://docs.astro.build/en/guides/deploy/) to deploy your blog to Netlify, Vercel, or other platforms.
 
-&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new)
+&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new) [![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=radishzzz%2Fastro-theme-retypeset)
+
+&emsp;The Wasmer button imports this repository and does not copy it into your GitHub account, so import your own fork to publish your blog. Before deploying, set `site.url` in `src/config.ts`, and replace or remove the demo's own services there: the Waline comment server (`comment.waline.serverURL`, or set `comment.enabled: false`), analytics (`seo.umamiAnalyticsID`, `preload.customUmamiAnalyticsJS`), site verification codes (`seo.verification`) and the image host (`preload.imageHostURL`).
 
 ## Updates
 
